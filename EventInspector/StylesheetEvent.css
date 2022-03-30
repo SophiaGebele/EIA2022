@@ -1,0 +1,32 @@
+body{
+    background-color: #ffcaf9;
+    color: #000;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    position: relative;
+}
+
+#div0, #div1{
+    width: 400px;
+    height: 500px;
+    background-color: #91658c;
+    color: #000;
+    position: absolute;
+}
+#div0{
+    left: 50px;
+    top: 100px;
+}
+#div1{
+    left: 600px;
+    top: 100px;
+}
+#Knopf0, #Knopf1{
+    background-color: #ffcaf9;
+}
