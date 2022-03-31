@@ -19,14 +19,26 @@ h1{
     color: #000;
     position: absolute;
 }
-#div0{
+div#div0{
     left: 50px;
     top: 100px;
 }
-#div1{
+div#div1{
     left: 600px;
     top: 100px;
 }
 #Knopf0, #Knopf1{
     background-color: #ffcaf9;
+}
+
+span#fixed{
+    background-color: #000;
+    color: #fff;
+    position:fixed;
+    left: 10px;
+    top: 10px;
+    width: 230px;
+    height: 20px;
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
 }
