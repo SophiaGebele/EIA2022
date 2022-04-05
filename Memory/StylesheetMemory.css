@@ -1,0 +1,82 @@
+body{
+    color: #000;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15pt;
+    position: absolute;
+    left: 300px;
+}
+h1{
+    font-size: 30pt;
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+
+#KarteHinten{
+    border: 2px;
+    border-color: #000;
+    border-style: solid;
+    border-radius: 10px;
+    width: 100px;
+    height: 130px;
+    background-color: rgb(140, 140, 140);
+    top: 300px;
+    left: 600px;
+    position:absolute;
+}
+#KarteBaum, #karteBaum2, #KarteBlume,#KarteBlume2, #KarteVogel,#KarteVogel2,  #KarteErde,#KarteErde2, #KarteWasser2, #KarteWasser{
+    border: 2px;
+    border-color: #000;
+    border-style: solid;
+    width: 100px;
+    height: 130px;
+    border-radius: 10px;
+    background-color: #475647;
+    position: absolute;
+    
+}
+#KarteBaum:hover, #KarteBlume:hover, #KarteVogel:hover, #KarteErde:hover, #KarteWasser:hover, #KarteHinten:hover{
+    border:5px;
+    border-color: #000;
+    border-style: solid;
+}
+#KarteBaum{
+    background-color: rgb(101, 76, 76);
+    top: 300px;
+}
+#KarteBlume{
+    background-color: rgb(229, 155, 155);
+    top: 300px;
+    left: 150px;
+}
+#KarteVogel{
+    background-color: rgb(206, 194, 134);
+    top: 300px;
+    left: 300px;
+}
+#KarteErde{
+    background-color: rgb(185, 128, 202);
+    top: 300px;
+    left: 450px;
+}
+#KarteWasser{
+    top: 500px;
+    left: 200px;
+    background-color: rgb(111, 135, 189);
+}
+#KarteWasser2{
+    background-color: rgb(111, 135, 189);
+}
+#KarteErde2{
+    background-color: rgb(185, 128, 202);
+}
+#KarteVogel2{
+    background-color: rgb(206, 194, 134);
+}
+#KarteBaum2{
+    background-color: rgb(101, 76, 76);
+}
+#KarteBlume2{
+    background-color: rgb(229, 155, 155);
+}

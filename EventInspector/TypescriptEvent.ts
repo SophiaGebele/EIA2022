@@ -39,6 +39,6 @@ namespace EventInspector{
         console.log("EventTyp", _event.typ);
         console.log("Target", _event.target);
         console.log("current Target", _event.currentTarget);
-        console.log();
     }
+    
 }
