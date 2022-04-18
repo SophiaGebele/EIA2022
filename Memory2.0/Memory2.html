@@ -7,6 +7,7 @@
     <title>Memory2.0</title>
     <link rel="stylesheet" href="StyleMemory2.css">
     <link rel="stylesheet" href="/Memory/StylesheetMemory.css">
+    <script src="Memory2.js", load></script>
 </head>
 <body>
     <header>
@@ -15,16 +16,20 @@
     </header>
     <main>
         <!--hier kommen alle Regler und Einstellungsmoeglichkeiten-->
-        <p>Kartenanzahl</p><input max="50" min="10" name="Kartenanzahl" step="2" type="number" value="20">
-        <p>Kartengroesse</p><input type="range" min="-10" max="10">
-        <p>Design</p><input type="color">
-        <p>Schrift</p><select name="Schriften" id="font-select">
-            <option value="">choose a font</option>
+        <p >Kartenanzahl</p><input max="50" min="10" name="Kartenanzahl" id="Kartenanzahl"step="2" type="number" value="20">
+        
+        <p>Kartengroesse</p><form><input type="range" min="-10" max="10" step="1" id="slider" name="slider" value="3"></form>
+
+        <p>Design</p><form><input type="color" name="color" id="color" value="#000"></form>
+
+        <p>Schrift</p><form><select name="Schriften" name="font-select"id="font-select">
+            <!--<option value="">choose a font</option>>-->
             <option value="Arial">Arial</option>
             <option value="Impact">Impact</option>
             <option value="Geneva">Geneva</option>
-        </select>
-        <button>let's start!</button>
+        </select></form>
+
+        <button><a href="../Memory/Memory.html">let's start!</a></button>
     </main>
     <footer>
         <a href="UI.pdf">UI-Skizze</a>

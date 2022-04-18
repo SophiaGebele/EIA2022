@@ -19,7 +19,7 @@ h2{
 }
 main{
     top: 100px;
-    left: 100px;
+    left: 50px;
     position: relative;
 }
 footer{
@@ -37,4 +37,7 @@ a:hover{
     color: #fff;
     background-color: #000;
     text-decoration: none;
+}
+button:hover{
+    background-color: #000;
 }
