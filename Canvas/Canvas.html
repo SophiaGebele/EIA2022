@@ -7,21 +7,25 @@
     <script src="Canvas.js"></script>
     <title>Canvas</title>
     <style>
-        canvas {
+        canvas#myCanvas, canvas#secondCanvas {
           display: inline-block;
           border: 2px solid #000; 
-          left:800px ;
-          top: 200px;
           position: relative;
+        }
+        canvas{
+            left:800px ;
+            top: 200px;
         }
       </style>
 </head>
 <body>
     <header>
-
+        <h1>Lade die Seite Neu, um weitere Linien und Farben zu sehen</h1>
+        <h2>lnks gefuellt und rechts leer</h2>
     </header>
     <main>
         <canvas id="myCanvas" class="art"></canvas>
+        <canvas id="secondCanvas"></canvas>
     </main>
     <footer>
         <!--Sophia Gebele-->

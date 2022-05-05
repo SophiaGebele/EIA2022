@@ -4,11 +4,15 @@ var Canvas;
     //Variablen
     let crc2 = document.querySelector("canvas")?.getContext("2d");
     let i;
+    let b;
+    let random = Math.floor(Math.random() * 100);
+    let randomtwo = Math.floor(Math.random() * 100);
     //let a: number;
     let h = Math.floor(Math.random() * 100);
     let s = Math.floor(Math.random() * 100);
     let l = Math.floor(Math.random() * 100);
     let a = .3;
+    let letter = "a";
     //Funtion Start als HndLoad
     function start(_event) {
         let crc2 = document.querySelector("canvas")?.getContext("2d");
@@ -34,6 +38,12 @@ var Canvas;
             // Fill with gradient
             crc2.fillStyle = gradient;
             crc2.fillRect(0, 0, crc2.canvas.width, crc2.canvas.height);
+            //crc2.beginPath();
+            crc2.arc(random + 100, randomtwo, random, randomtwo * 2, 2 * Math.PI);
+            crc2.stroke();
+            crc2.font = "60px Arial";
+            crc2.fillStyle = "black";
+            crc2.fillText(letter, random, randomtwo);
             //}
         }
     }
