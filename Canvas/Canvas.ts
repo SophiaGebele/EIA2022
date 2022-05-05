@@ -6,23 +6,30 @@ namespace Canvas {
     let b:number;
     let random: number = Math.floor(Math.random() * 100);
     let randomtwo: number = Math.floor(Math.random() * 100);
-    //let a: number;
     let h: number = Math.floor(Math.random() * 100);
     let s: number = Math.floor(Math.random() * 100);
     let l: number = Math.floor(Math.random() * 100);
-    let a: number = .3;
-    let letter:string="a";
-    //Funtion Start als HndLoad
+    let letter:string="SOPHIA";
+    let textTwo:string="GEBELE";
+
+
+    //Funtion Start 
     function start(_event: Event): void {
         let crc2: CanvasRenderingContext2D = <CanvasRenderingContext2D>document.querySelector("canvas")?.getContext("2d");
 
+
+        //10mal soll alles was in der Schleife steht, passieren
         for (i = 0; i < 10; i++) {
             let random: number = Math.floor(Math.random() * 100);
             let randomtwo: number = Math.floor(Math.random() * 100);
-            console.log(random, "ForSchleife");
+            console.log(random, "random 1");
+            console.log(randomtwo, "randomTwo 1")
             //for (random >= 0; random < 100; random += randomtwo) {
-            console.log(random, "ZweiteSchleife");
+                //rausgemacht, weil es eine endlos-Schleife ist
+            console.log(random, "random 2");
+            console.log(randomtwo, "randomTwo 2");
 
+            //fuer die Linien
             crc2.moveTo(randomtwo, random);
             crc2.lineTo(random, randomtwo);
             crc2.lineTo(random + 10, randomtwo + 10);
@@ -31,28 +38,31 @@ namespace Canvas {
             crc2.stroke();
 
 
-            // Create gradient
+            // Verlauf hsla Random-Zahlen fuer random-Farben
             let h: number = Math.floor(Math.random() * 360);
             let s: number = Math.floor(Math.random() * 100);
             let l: number = Math.floor(Math.random() * 100);
             let gradient = crc2.createLinearGradient(0, 0, crc2.canvas.width, crc2.canvas.height);
             gradient.addColorStop(1, "#0004");
-            gradient.addColorStop(0, `hsla(${h}, ${s}%, ${l}%, 0.5)`);
-
-            // Fill with gradient
+            gradient.addColorStop(0, `hsla(${h}, ${s}%, ${l}%, 0.5)`); //hier die Random Zahlen eingesetzt
             crc2.fillStyle = gradient;
             crc2.fillRect(0, 0, crc2.canvas.width, crc2.canvas.height);
 
-            //crc2.beginPath();
+            //Ein Kreis mit Random-Werten
             crc2.arc(random + 100, randomtwo, random, randomtwo * 2, 2 * Math.PI);
             crc2.stroke();
+            
+            //ein bisschen Text
+            crc2.font = "60px Arial";
+            crc2.fillStyle="black";
+            crc2.fillText(letter, h, randomtwo); //variablen aus dem Farb-Werten genommen fuer mehr Zufall
 
-                crc2.font = "60px Arial";
-                crc2.fillStyle="black";
-                crc2.fillText(letter, random, randomtwo);
+            crc2.font = "20px Arial";
+            crc2.fillStyle="white";
+            crc2.fillText(textTwo, random, s); //variablen aus dem Farb-Werten genommen fuer mehr Zufall
                 
             
-            //}
+            //} //ende der aus-kommentierten For-Schleife
         }
     }
 }
