@@ -1,17 +1,19 @@
 var AnimationStrand;
 (function (AnimationStrand) {
-    class Wolke {
+    class Wolke extends StrandItem {
         positon;
         velocity;
         type;
         size;
-        constructor(_size) {
+        constructor(_position, _size, _velocity) {
+            super(_position, _velocity);
             console.log("WolkenConstructor");
+            this.size = _size;
+            //this.particlesCount=90;
             this.positon = new AnimationStrand.Vector(0, 0);
             this.velocity = new AnimationStrand.Vector(0, 0);
             this.velocity.random(100, 200);
             this.type = Math.floor(Math.random() * 4);
-            this.size = _size;
         }
         moveBy(_timeslice) {
             console.log("moveByWolke");

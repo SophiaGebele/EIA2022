@@ -1,5 +1,5 @@
 namespace StrandExklusive{
-    export abstract class StrandItems {
+    export abstract class StrandItem {
         position: Vector;
         velocity: Vector;
 

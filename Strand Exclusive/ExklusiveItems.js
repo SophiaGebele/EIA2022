@@ -1,6 +1,6 @@
 var StrandExklusive;
 (function (StrandExklusive) {
-    class StrandItems {
+    class StrandItem {
         position;
         velocity;
         constructor(_position, _velocity) {
@@ -25,6 +25,6 @@ var StrandExklusive;
             }
         }
     }
-    StrandExklusive.StrandItems = StrandItems;
+    StrandExklusive.StrandItem = StrandItem;
 })(StrandExklusive || (StrandExklusive = {}));
 //# sourceMappingURL=ExklusiveItems.js.map

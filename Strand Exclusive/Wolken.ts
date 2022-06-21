@@ -1,5 +1,12 @@
 namespace StrandExklusive{
-    function drawCloud(_xPos: Vector, _yPos: Vector): void {
+    export class Wolke extends StrandItem{
+        constructor(_position:Vector, _velocity:Vector){
+            super(_position, _velocity);
+
+            this.position=_position;
+            this.velocity=_velocity;
+        }
+    draw():void{
         //cloud 
         let h: number = Math.floor(Math.random() *(200-20+1))+20;
         let s: number = Math.floor(Math.random() * (40-5+1))+5;
@@ -23,4 +30,5 @@ namespace StrandExklusive{
         crc2.stroke();
         crc2.restore();
     }
+}
 }
