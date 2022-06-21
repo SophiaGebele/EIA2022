@@ -5,7 +5,7 @@ namespace StrandExklusive {
     export let crc2: CanvasRenderingContext2D;
 
     function handleLoad(): void {
-        canvas = document.querySelector("myCanvas")!;
+        canvas =<HTMLCanvasElement> document.getElementById("myCanvas")!;
         crc2 = canvas.getContext("2d")!;
 
         let allStrandItems: StrandItem[] = [];

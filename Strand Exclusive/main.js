@@ -3,7 +3,7 @@ var StrandExklusive;
     window.addEventListener("load", handleLoad);
     let canvas;
     function handleLoad() {
-        canvas = document.querySelector("myCanvas");
+        canvas = document.getElementById("myCanvas");
         StrandExklusive.crc2 = canvas.getContext("2d");
         let allStrandItems = [];
         // allBeachElements.push(new Sky(new Vector(0, 0)));
