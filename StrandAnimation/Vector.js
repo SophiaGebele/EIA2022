@@ -10,7 +10,7 @@ var AnimationStrand;
             this.x = _x;
             this.y = _y;
         }
-        scale(factor) {
+        scale(_factor) {
             this.x *= _factor;
             this.y *= _factor;
         }
