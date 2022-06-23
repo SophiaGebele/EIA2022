@@ -1,5 +1,6 @@
 namespace StrandExklusive{
     export class Wolke extends StrandItem{
+        
         constructor(_position:Vector, _velocity:Vector){
             super(_position, _velocity);
 

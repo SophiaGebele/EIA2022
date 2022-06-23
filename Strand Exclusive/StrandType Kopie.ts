@@ -1,4 +1,4 @@
-namespace StrandExklusive {
+namespace StrandKlick {
 
     window.addEventListener("load", start);
 

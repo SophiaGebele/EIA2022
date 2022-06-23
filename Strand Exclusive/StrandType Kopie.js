@@ -1,5 +1,5 @@
-var StrandExklusive;
-(function (StrandExklusive) {
+var StrandKlick;
+(function (StrandKlick) {
     window.addEventListener("load", start);
     //Variablen
     //start
@@ -107,5 +107,5 @@ var StrandExklusive;
             crc2.stroke();
         }
     } //start Ende
-})(StrandExklusive || (StrandExklusive = {})); //NamespaceEnde
+})(StrandKlick || (StrandKlick = {})); //NamespaceEnde
 //# sourceMappingURL=StrandType%20Kopie.js.map

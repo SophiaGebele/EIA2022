@@ -1,5 +1,6 @@
 namespace StrandExklusive{
     export class Moewe extends StrandItem{
+
         constructor(_position:Vector, _velocity:Vector){
             super(_position, _velocity); 
             this.position=_position;

@@ -30,7 +30,7 @@ namespace StrandExklusive {
                 strandItem.move(1);
             }
         }, 100);
-        
+    
     }
 }
 
