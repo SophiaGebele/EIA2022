@@ -11,7 +11,7 @@ var StrandExklusive;
             StrandExklusive.crc2.fillStyle = "yellow";
             StrandExklusive.crc2.fill();
             StrandExklusive.crc2.stroke();
-            StrandExklusive.crc2.restore();
+            //crc2.restore();
         }
     }
     StrandExklusive.Sonne = Sonne;

@@ -7,6 +7,8 @@ var StrandExklusive;
             this.velocity = _velocity;
         }
         draw() {
+            StrandExklusive.crc2.save();
+            StrandExklusive.crc2.translate(this.position.x, this.position.y);
             StrandExklusive.crc2.beginPath();
             StrandExklusive.crc2.moveTo(200, 110);
             StrandExklusive.crc2.lineTo(200, 130);
@@ -16,7 +18,7 @@ var StrandExklusive;
             StrandExklusive.crc2.fillStyle = "black";
             StrandExklusive.crc2.fill();
             StrandExklusive.crc2.stroke();
-            StrandExklusive.crc2.restore();
+            // crc2.restore();
             //Kopf - drawSun(x, y);
             StrandExklusive.crc2.arc(205, 105, 5, 0, 2 * Math.PI);
             StrandExklusive.crc2.stroke();
@@ -35,6 +37,7 @@ var StrandExklusive;
             StrandExklusive.crc2.closePath();
             StrandExklusive.crc2.stroke();
             StrandExklusive.crc2.fill();
+            StrandExklusive.crc2.restore();
         }
     }
     StrandExklusive.Person = Person;

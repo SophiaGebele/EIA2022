@@ -24,6 +24,12 @@ var StrandExklusive;
                 this.position.y -= StrandExklusive.crc2.canvas.height;
             }
         }
+        draw() {
+            console.log("drawing");
+        }
+        update() {
+            console.log("updating");
+        }
     }
     StrandExklusive.StrandItem = StrandItem;
 })(StrandExklusive || (StrandExklusive = {}));

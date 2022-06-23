@@ -1,5 +1,6 @@
 namespace StrandExklusive{
     export class Sonne extends StrandItem{
+        
         constructor(_position:Vector){
             super(_position, new Vector(0,0));
             this.position=_position;
@@ -10,8 +11,7 @@ namespace StrandExklusive{
             crc2.fillStyle = "yellow";
             crc2.fill();
             crc2.stroke();
-
-            crc2.restore();
+            //crc2.restore();
         }
     }
 }

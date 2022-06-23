@@ -1,5 +1,5 @@
 namespace StrandExklusive{
-    export abstract class StrandItem {
+    export class StrandItem {
         position: Vector;
         velocity: Vector;
 
@@ -27,7 +27,12 @@ namespace StrandExklusive{
             }
         }
 
-        abstract draw(): void;
+        draw(): void{
+            console.log("drawing");
+        }
+        update():void{
+            console.log("updating");
+        }
     }
 
     
