@@ -28,20 +28,35 @@ var StrandInteractive;
                 strandItem.update();
             }
         }, 100);
+        let hitbox = document.getElementById('hitbox');
+        hitbox.addEventListener('mousedown', doSomething);
+        console.log("hitbox");
+        function doSomething() {
+            console.log("doing something");
+            StrandInteractive.allStrandItems.splice(4);
+            StrandInteractive.allStrandItems.push(new StrandInteractive.Person(new StrandInteractive.Vector(200, 210), new StrandInteractive.Vector(2, 2)));
+        }
+        let secondHitbox = document.getElementById('secondHitbox');
+        secondHitbox.addEventListener('click', doSomethingElse);
+        console.log("secondHitbox");
+        function doSomethingElse() {
+            //allStrandItems.splice();
+            StrandInteractive.allStrandItems.push(new StrandInteractive.Sonne(new StrandInteractive.Vector(30, 30)));
+        }
+        //function handleMousedown(_event):void{
+        //Maus Koordinaten anzeigen lassen - readonly
+        //    let mouseX=_event.offsetX;
+        //    let mouseY=_event.offsetY;
+        //    let destination=_event.target+"";
+        //    for (let i=0; i<allStrandItems.length;i++){
+        //        let strandItem = allStrandItems[i];
+        //        if(crc2.isPointInPath(mouseX, mouseY)){
+        //                strandItem.draw();
+        //                strandItem.move(1);
+        //            
+        //        }
+        //    }
+        //}
     }
-    //function handleMousedown(_event):void{
-    //Maus Koordinaten anzeigen lassen - readonly
-    //    let mouseX=_event.offsetX;
-    //    let mouseY=_event.offsetY;
-    //    let destination=_event.target+"";
-    //    for (let i=0; i<allStrandItems.length;i++){
-    //        let strandItem = allStrandItems[i];
-    //        if(crc2.isPointInPath(mouseX, mouseY)){
-    //                strandItem.draw();
-    //                strandItem.move(1);
-    //            
-    //        }
-    //    }
-    //}
 })(StrandInteractive || (StrandInteractive = {}));
 //# sourceMappingURL=main.js.map

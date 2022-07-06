@@ -33,8 +33,26 @@ namespace StrandInteractive {
                 strandItem.update();
             }
         }, 100);
-    
-    }
+
+        let hitbox:HTMLDivElement=<HTMLDivElement>document.getElementById('hitbox');
+        hitbox.addEventListener('mousedown', doSomething);
+        console.log("hitbox")
+        function doSomething(){
+            console.log("doing something");
+            allStrandItems.splice(4);
+            allStrandItems.push(new Person(new Vector(200, 210), new Vector(2, 2)));
+        }
+        
+        
+        let secondHitbox:HTMLDivElement=<HTMLDivElement>document.getElementById('secondHitbox');
+        secondHitbox.addEventListener('click', doSomethingElse);
+        console.log("secondHitbox");
+        function doSomethingElse(){
+            //allStrandItems.splice();
+            allStrandItems.push(new Sonne(new Vector(30, 30)));
+        }
+        
+       
 
     
     //function handleMousedown(_event):void{
@@ -57,4 +75,5 @@ namespace StrandInteractive {
 
     //}
 
-}
+    }
+    }

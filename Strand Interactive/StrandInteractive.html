@@ -28,17 +28,45 @@
           left:200px ;
           top: 200px;
       }
+      div#hitbox{
+        background-color: hsl(0, 0%, 0%, 0.2);
+        border: 3px, solid, black;
+        width: 20px;
+        height: 50px;
+        position: relative;
+        left: 430px;
+        top: 130px;
+      }
+      div#hitbox:hover{
+        background-color: hsl(0, 0%, 0%, 0.1);
+        cursor: pointer;
+      }
+      div#secondHitbox{
+        background-color: hsl(0, 0%, 0%, 0.2);
+        width: 50px;
+        height: 50px;
+        border-radius: 560px;
+        position: relative;
+        left: 200px;
+        top: -15px;
+      }
+      div#secondHitbox:hover{
+        background-color: hsl(0, 0%, 0%, 0.1);
+        cursor: pointer;
+      }
     </style>
 </head>
 <body>
     <header>
       <a href="Klassendiagramm.pdf">neues Klassendiagramm</a>
-      <h1>try to catch the person with a click</h1>
+      <h1>click on hitbox / door</h1>
+      <!--person will choose another path then-->
     </header>
     <main>
 
     <canvas id="sophiaCanvas"></canvas>
-        
+        <div id="hitbox"></div>
+        <div id="secondHitbox"></div>
     </main>
     <footer>
         

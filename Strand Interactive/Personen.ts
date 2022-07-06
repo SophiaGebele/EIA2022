@@ -70,5 +70,9 @@ namespace StrandInteractive {
         }
         //crc2.translate
         //translate.restore();
+
+        //interact(_x: number, _y: number): void {
+            
+        //}
     }
 }

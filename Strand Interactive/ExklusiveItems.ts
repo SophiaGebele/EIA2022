@@ -5,7 +5,7 @@ namespace StrandInteractive{
     }
     
     
-    export class StrandItem {
+    export abstract class StrandItem {
         position: Vector;
         velocity: Vector;
 
@@ -40,6 +40,7 @@ namespace StrandInteractive{
         update():void{
             //console.log("updating"); 
         }
+        //abstract interact?(_x:number, _y:number):void;
     }
 
     
