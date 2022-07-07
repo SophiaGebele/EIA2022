@@ -1,6 +1,11 @@
 namespace Endabgabe{
     window.addEventListener("load", handleload);
 
+    //Variablen
+    export let mouseX:number;
+    export let mouseY:number;
+    export let allVegtables:Vegtables[]=[];
+
     function handleload(_event:Event):void{
     }
     //Eventlistener muss evtl geloescht werden wieder
@@ -24,6 +29,7 @@ namespace Endabgabe{
     potatoSeed.addEventListener('click', choosePlanting);
     export let paprikaSeed=document.getElementById('plantPaprika');
     paprikaSeed.addEventListener('click', choosePlanting);
+    export let capitalInput=document.getElementById('inputKapital');
     
     function chooseAction(_click:Event):void{
 
@@ -31,4 +37,5 @@ namespace Endabgabe{
     function choosePlanting(_click:Event):void{
 
     }
+    
 }//Namespace Ende

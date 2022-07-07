@@ -1,6 +1,7 @@
 var Endabgabe;
 (function (Endabgabe) {
     window.addEventListener("load", handleload);
+    Endabgabe.allVegtables = [];
     function handleload(_event) {
     }
     //Eventlistener muss evtl geloescht werden wieder
@@ -24,6 +25,7 @@ var Endabgabe;
     Endabgabe.potatoSeed.addEventListener('click', choosePlanting);
     Endabgabe.paprikaSeed = document.getElementById('plantPaprika');
     Endabgabe.paprikaSeed.addEventListener('click', choosePlanting);
+    Endabgabe.capitalInput = document.getElementById('inputKapital');
     function chooseAction(_click) {
     }
     function choosePlanting(_click) {
