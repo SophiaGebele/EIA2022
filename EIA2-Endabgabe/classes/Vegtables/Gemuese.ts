@@ -10,6 +10,9 @@ namespace Endabgabe{
 
     export abstract class Vegtables extends Universe{
 
+
+
+        
         
     }
 }//Namespace Ende 
