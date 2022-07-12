@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
     <!--Javascript-Dateien-->
     <script src="GartenSimulator.js"></script>
     <script src="classes/Superclass/Superklasse.js"></script>
+    <script src="classes/Schädlinge/Pests.js"></script>
     <script src="classes/Vegtables/Gemuese.js"></script>
     <script src="classes/Vegtables/Salat.js"></script>
     <script src="classes/Vegtables/Gurke.js"></script>
@@ -18,13 +20,70 @@
     <script src="classes/Vegtables/Paprika.js"></script>
     <title>EIA2-Endabgabe zum gartenSimulator</title>
 </head>
+
 <body>
     <header>
-        <nav id="navigation">Kapital:<input id="inputKapital" type="value" min="0" max="1000"  placeholder="type"></input></nav>
-       <h1>Gartensimulator</h1>
+        <nav id="navigation">Kapital:<input id="inputKapital" type="text" placeholder="$$$"></input></nav>
+        <h1>Gartensimulator</h1>
+        <img src="assets/plantingSeed.png" alt="plantingSeed" id="plantingImage">
+        <img src="assets/growing.png" alt="growing" id="growingImage">
     </header>
     <main>
-        <div id="garden"></div>
+        <div id="garden" class="garden">
+            <div class="selections">
+                <div id="1"></div>
+                <div id="2"></div>
+                <div id="3"></div>
+                <div id="4"></div>
+                <div id="5"></div>
+                <div id="6"></div>
+                <div id="7"></div>
+                <div id="8"></div>
+                <div id="9"></div>
+                <div id="10"></div>
+                <div id="11"></div>
+                <div id="12"></div>
+                <div id="13"></div>
+                <div id="14"></div>
+                <div id="15"></div>
+                <div id="16"></div>
+                <div id="17"></div>
+                <div id="18"></div>
+                <div id="19"></div>
+                <div id="20"></div>
+                <div id="21"></div>
+                <div id="22"></div>
+                <div id="23"></div>
+                <div id="24"></div>
+                <div id="25"></div>
+                <div id="26"></div>
+                <div id="27"></div>
+                <div id="28"></div>
+                <div id="29"></div>
+                <div id="30"></div>
+                <div id="31"></div>
+                <div id="32"></div>
+                <div id="33"></div>
+                <div id="34"></div>
+                <div id="35"></div>
+                <div id="36"></div>
+                <div id="37"></div>
+                <div id="38"></div>
+                <div id="39"></div>
+                <div id="40"></div>
+                <div id="41"></div>
+                <div id="42"></div>
+                <div id="43"></div>
+                <div id="44"></div>
+                <div id="45"></div>
+                <div id="46"></div>
+                <div id="47"></div>
+                <div id="48"></div>
+                <div id="49"></div>
+                <div id="50"></div>
+            </div>
+        </div>
+        <canvas id="myCanvas"></canvas>
         <div id="chooseTask">
             <div class="tasks" id="actions">
                 <span id="actionsText">actions..</span>
@@ -47,40 +106,49 @@
                 <button class="planting" id="plantPotato"></button>
                 <button class="planting" id="plantPaprika"></button>
             </div>
-            <span id="chooseATask">*choose a task*</span></div>
-        
+            <span id="chooseATask">*choose a task*</span>
+        </div>
+
         <div class="shop" id="shopping">*shop*
             <br>
             <div class="seeds">
-            <span id="seedShopping">seeds..</span>
-            <br>
-            <button class="shopping" id="shopSalad">1 SaladSeed</button>
-            <br>
-            <button class="shopping" id="shopCucumber">1 CucumberSeed</button>
-            <br>
-            <button class="shopping" id="shopTomato">1 TomatoSeed</button>
-            <br>
-            <button class="shopping" id="shopCarrot">1 CarrotSeed</button>
-            <br>
-            <button class="shopping" id="shopPotato">1 PotatoSeed</button>
-            <br>
-            <button class="shopping" id="shopPaprika">1 PaprikaSeed</button>
-            <br>
-            <br>
+                <span id="seedShopping">seeds..</span>
+                <br>
+                <button class="shopping" id="shopSalad">1 SaladSeed</button>
+                <br>
+                <button class="shopping" id="shopCucumber">1 CucumberSeed</button>
+                <br>
+                <button class="shopping" id="shopTomato">1 TomatoSeed</button>
+                <br>
+                <button class="shopping" id="shopCarrot">1 CarrotSeed</button>
+                <br>
+                <button class="shopping" id="shopPotato">1 PotatoSeed</button>
+                <br>
+                <button class="shopping" id="shopPaprika">1 PaprikaSeed</button>
+                <br>
+                <br>
             </div>
             <div class="material">
-            <span id="materialShopping">materials..</span>
-            <button class="shopping" id="pesticides">pesticides</button>
-            <button class="shopping" id="fertilizer">fertilizer</button>
+                <span id="materialShopping">materials..</span>
+                <button class="shopping" id="pesticides">pesticides</button>
+                <button class="shopping" id="fertilizer">fertilizer</button>
             </div>
+        </div>
+
+        <div class="watersource" id="watered">
+            <!--Platzhalter-->
+        </div>
+
+        <div class="fertilizersource" id="fertilized">
+            <!--platzhalter-->
+        </div>
+
+        <div class="pesticidesource" id="protected">
+            <!--platzhalter-->
         </div>
     </main>
     <footer>
         <!--Images-->
-
-
-
-
 
 
 
@@ -92,4 +160,5 @@
         <!--Kurs: Entwicklungen Interaktiver Anwendungen 2-->
     </footer>
 </body>
+
 </html>

@@ -22,7 +22,14 @@ div#garden{
     top: 70px;
     left:20px;
 }
-
+canvas#myCanvas{
+    background-color: none;
+    width: 1000px;
+    height: 500px;
+    position: relative;
+    top: 70px;
+    left: 20px;
+}
 h1{
     color: hsl(0, 0%, 100%);
     left: 20px;
@@ -51,9 +58,9 @@ div#chooseTask{
 }
 div#chooseTask{
     width: 1000px;
-    position: relative;
+    position: absolute;
     height: 190px;
-    top: 510px;
+    top: 600px;
     left: 15px;
 }
 
@@ -143,4 +150,43 @@ span#chooseATask{
     font-weight: 200;
     text-align: center;
     left: -20px;
+}
+div.watersource>div{
+    background-color: hsl(240, 100%, 50%, 0.3);
+    width: 50px;
+    height: 50px;
+}
+
+img#plantingImage{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 10px;
+    left: 260px;
+}
+img#growingImage{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 13px;
+    left: 300px;
+}
+div.selections>div{
+    background-color: none;
+    border: solid 1px hsl(0, 0%, 0%, 0.5);
+    width: 98px;
+    height: 98px;
+    position: relative;
+    justify-items:auto;
+    display: inline-block;
+    margin-top: -4px;
+    margin-left: -4px;
+}
+div.selections>div:hover{
+    background-color: hsl(0, 0%, 0%, 0.1);
+}
+div.selections{
+    top: 4px;
+    left: 4px;
+    position: relative;
 }
