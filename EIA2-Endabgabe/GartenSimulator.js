@@ -4,6 +4,9 @@ var Endabgabe;
     Endabgabe.allVegtables = [];
     Endabgabe.allPests = [];
     Endabgabe.allImages = [];
+    Endabgabe.capitalUser = document.getElementById('inputCapital');
+    Endabgabe.capitalUser.
+    ;
     let list = document.getElementsByClassName('selections');
     for (let item of list) {
         item.addEventListener('click', selected);
