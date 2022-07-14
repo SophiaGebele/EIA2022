@@ -69,7 +69,7 @@ namespace Endabgabe{
 
         isReady():void{
             if(STATUS.READY){
-                //image chaneg
+                //image change
             }
         }//isReady END
 
@@ -119,7 +119,7 @@ namespace Endabgabe{
             }
             function harvestPlant():void{
                 STATUS.NOTHING;
-                
+
             }
 
         } //harvest END

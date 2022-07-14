@@ -58,7 +58,7 @@ var Endabgabe;
         } //grow END
         isReady() {
             if (STATUS.READY) {
-                //image chaneg
+                //image change
             }
         } //isReady END
         die() {

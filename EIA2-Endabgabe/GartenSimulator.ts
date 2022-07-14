@@ -7,8 +7,7 @@ namespace Endabgabe{
     export let allVegtables:Vegtables[]=[];
     export let allPests:Pests[]=[];
     export let allImages=[];
-    export let capitalUser=document.getElementById('inputCapital');
-    capitalUser.
+    
     
     let list=document.getElementsByClassName('selections');
     for(let item of list){
