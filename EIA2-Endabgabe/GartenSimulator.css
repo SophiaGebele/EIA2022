@@ -109,6 +109,7 @@ button.planting {
     border-radius: 5px;
     width: 70px;
     height: 70px;
+    margin-top: 5px;
 }
 
 div#shopping {
@@ -257,8 +258,17 @@ div#body {
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
 }
-img{
+div#asset>img{
     width: 70px;
     height: 70px;
     visibility: hidden;
 }
+img#buttonSalad, img#buttonCarrot, img#buttonCucumber, img#buttonPotato, img#buttonPaprika, img#buttonTomato{
+    width: 30px;
+    height: 30px;
+}
+
+img#buttonSalad{
+    position: relative;
+}
+
