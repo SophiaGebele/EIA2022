@@ -13,11 +13,10 @@ span#namePlayer {
     left: 55px;
 }
 
-input#inputKapital {
+input#inputCapital {
     width: 100px;
+    float: right;
     position: relative;
-    top: -3px;
-    left: 2px;
     color: green;
     font-weight: 700;
     font-size: 13pt;
@@ -56,7 +55,7 @@ nav#navigation {
     top: 10px;
     right: 100px;
     float: right;
-    width: 200px
+    width: 200px;
 }
 
 div#chooseTask {
@@ -257,4 +256,9 @@ div#body {
     position: relative;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
+}
+img{
+    width: 70px;
+    height: 70px;
+    visibility: hidden;
 }

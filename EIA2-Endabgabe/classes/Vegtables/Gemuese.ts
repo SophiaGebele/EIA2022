@@ -12,7 +12,7 @@ namespace Endabgabe{
         status:STATUS=STATUS.NOTHING; //so wird es jedem Feld weiter gegeben
 
         image:HTMLImageElement;
-        allImages:HTMLImageElement[];
+        protected allImages:HTMLImageElement[];
         placeX:number;
         placeY:number;
         waterLevel:number=0;
