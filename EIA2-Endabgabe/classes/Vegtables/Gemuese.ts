@@ -119,6 +119,7 @@ namespace Endabgabe{
             }
             function harvestPlant():void{
                 STATUS.NOTHING;
+                
             }
 
         } //harvest END
