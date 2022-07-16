@@ -1,1 +1,1 @@
-{"version":3,"file":"Superklasse.js","sourceRoot":"","sources":["Superklasse.ts"],"names":[],"mappings":"AAAA,IAAU,SAAS,CAIlB;AAJD,WAAU,SAAS;IAClB,MAAsB,QAAQ;KAE7B;IAFqB,kBAAQ,WAE7B,CAAA;AACF,CAAC,EAJS,SAAS,KAAT,SAAS,QAIlB,CAAA,gBAAgB"}
+{"version":3,"file":"Superklasse.js","sourceRoot":"","sources":["Superklasse.ts"],"names":[],"mappings":"AAAA,IAAU,SAAS,CAKlB;AALD,WAAU,SAAS;IAClB,MAAsB,QAAQ;QAE3B,SAAS,CAAM;KACjB;IAHqB,kBAAQ,WAG7B,CAAA;AACF,CAAC,EALS,SAAS,KAAT,SAAS,QAKlB,CAAA,gBAAgB"}
