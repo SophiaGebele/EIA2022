@@ -45,7 +45,7 @@ namespace Endabgabe{
                     this.fight();
                     break;
                 case STATUS.PLANTED:
-                    this.plant();
+                    this.isPlant();
                     break;
 
             }
@@ -87,6 +87,11 @@ namespace Endabgabe{
 
         }//fight END
 
+
+
+        isPlant():void{
+
+        }//isPlant END
 
 
         plant():void{
