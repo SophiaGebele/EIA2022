@@ -10,6 +10,7 @@ namespace Endabgabe {
     export let capitalUser: HTMLInputElement;
 
     function handleload(_event: Event): void {
+        Assets.load();
 
         var list = document.getElementsByClassName('selections');
         for (var item of list) {
@@ -17,7 +18,7 @@ namespace Endabgabe {
         }
         function selected(_click: Event): void {
             console.log('selected');
-            item.style.border = 'solid 3px #000';
+            this.item.style.border = 'solid 3px #000';
         }
 
 

@@ -5,13 +5,14 @@ var Endabgabe;
     Endabgabe.allPests = [];
     Endabgabe.allImages = [];
     function handleload(_event) {
+        Endabgabe.Assets.load();
         var list = document.getElementsByClassName('selections');
         for (var item of list) {
             item.addEventListener('click', selected);
         }
         function selected(_click) {
             console.log('selected');
-            item.style.border = 'solid 3px #000';
+            this.item.style.border = 'solid 3px #000';
         }
     }
     function update() {
