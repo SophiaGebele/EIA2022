@@ -7,7 +7,7 @@ namespace Endabgabe {
     export let allVegtables: Vegtables[] = [];
     export let allPests: Pests[] = [];
     export let allImages: Assets[] = [];
-    export let capitalUser: HTMLInputElement;
+    export let capitalUser=document.getElementById('inputCapital');
 
     function handleload(_event: Event): void {
         Assets.load();

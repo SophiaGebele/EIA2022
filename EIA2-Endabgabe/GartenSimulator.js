@@ -4,6 +4,7 @@ var Endabgabe;
     Endabgabe.allVegtables = [];
     Endabgabe.allPests = [];
     Endabgabe.allImages = [];
+    Endabgabe.capitalUser = document.getElementById('inputCapital');
     function handleload(_event) {
         Endabgabe.Assets.load();
         var list = document.getElementsByClassName('selections');
