@@ -14,8 +14,7 @@ namespace Endabgabe {
         price:number;
         image: HTMLImageElement;
         protected allImages: HTMLImageElement[];
-        placeX: number;
-        placeY: number;
+        productPrice:number=2;
         waterLevel: number = 0;
         maximumWater: number = 6;
         fertilizedLevel: number = 0;
@@ -24,6 +23,7 @@ namespace Endabgabe {
         maximumFertilizer: number = 3;
         protectedLevel: number = 0;
         maximumProtection: number = 3;
+        
         constructor(_placeX: number, _placeY: number) {
             super();
             this.placeX = _placeX;
