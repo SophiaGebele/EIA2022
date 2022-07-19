@@ -1,8 +1,7 @@
 var Endabgabe;
 (function (Endabgabe) {
     class Cucumber extends Endabgabe.Vegtables {
-        allImages = [Endabgabe.Assets.plantingSeed, Endabgabe.Assets.growing];
-        image = this.allImages[0];
+        allImages = [, Endabgabe.Assets.plantingSeed, Endabgabe.Assets.growing, Endabgabe.Assets.cucmberPicture];
     }
     Endabgabe.Cucumber = Cucumber;
 })(Endabgabe || (Endabgabe = {}));
